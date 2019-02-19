@@ -1,0 +1,15 @@
+interface User {
+  id: ID
+  name: String
+}
+
+interface Animal {
+  id: ID! 
+  test: String
+}
+
+type Testing implements User & Animal {
+  id: ID! @unique
+  name: String
+  test: String
+}
